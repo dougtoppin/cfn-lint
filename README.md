@@ -9,11 +9,11 @@ This repo is used to build a Dockerhub image of the python-cfn-lint tool.
 
 Run this using the image like this:
 
-    docker run -t -v $(pwd):/tmp dougtoppin/cfn-lint:1.0 cloudformation_template_file
+    docker run -t -v $(pwd):/opt dougtoppin/cfn-lint cloudformation_template_file
 
 Make it easier by setting up a shell alias like this:
 
-    alias cfn-lint="docker run -t -v $(pwd):/tmp dougtoppin/cfn-lint:1.0 "
+    alias cfn-lint="docker run -t -v $(pwd):/opt dougtoppin/cfn-lint "
 
 Once the alias has been created use it like this:
 
